@@ -1,0 +1,21 @@
+MEERAB'S COLLECTION — LIVE LAUNCH QUICK CHECK
+
+[ ] Supabase project created
+[ ] SQL/schema files applied
+[ ] RLS checked
+[ ] Security Advisor checked
+[ ] Admin account/role configured
+[ ] Public Supabase URL/key configured
+[ ] Real WhatsApp number configured
+[ ] Store email/domain configured
+[ ] Delivery + return policy finalized
+[ ] Products/photos/prices added
+[ ] Customer signup/login tested
+[ ] COD checkout tested
+[ ] Admin order management tested
+[ ] Inventory tested
+[ ] GitHub main branch pushed
+[ ] Cloudflare Pages deployed
+[ ] pages.dev URL tested
+[ ] Custom domain connected (optional)
+[ ] No secret/service-role key exposed

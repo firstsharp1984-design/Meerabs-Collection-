@@ -1,0 +1,32 @@
+FINAL VALUES TO REPLACE BEFORE LAUNCH
+
+STORE NAME:
+Meerab's Collection
+
+SUPABASE URL:
+https://YOUR_PROJECT.supabase.co
+
+SUPABASE PUBLISHABLE/ANON KEY:
+YOUR_BROWSER_SAFE_KEY
+
+WHATSAPP:
+923000000000
+
+STORE EMAIL:
+YOUR-STORE-EMAIL@example.com
+
+DOMAIN:
+https://YOUR-DOMAIN.example
+
+DELIVERY CHARGE:
+PKR ______
+
+DELIVERY AREAS:
+____________________
+
+RETURN WINDOW:
+______ days
+
+PAYMENT METHODS:
+Cash on Delivery
+[Add real online gateway only after provider setup]
