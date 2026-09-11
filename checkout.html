@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Checkout — Meerab's Collection</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .checkout{max-width:1050px;margin:35px auto;padding:20px}
+    .checkout-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:24px}
+    .card{background:#fff;border:1px solid #eee;border-radius:18px;padding:22px;box-shadow:0 8px 30px rgba(0,0,0,.05)}
+    label{display:block;font-weight:600;margin:12px 0}
+    input,textarea,select{width:100%;box-sizing:border-box;padding:12px;border:1px solid #ddd;border-radius:10px;margin-top:6px}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .cart-line{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #eee;padding:12px 0}
+    .total{display:flex;justify-content:space-between;font-size:1.15rem;font-weight:800;padding-top:15px}
+    .pay-option{display:block;border:1px solid #ddd;border-radius:12px;padding:12px;margin:8px 0}
+    .pay-option input{width:auto;margin-right:8px}
+    .success-box{padding:18px;border-radius:14px;background:#f3fff6;border:1px solid #b8e6c2}
+    .error{color:#a40000}.muted{color:#777}
+    @media(max-width:800px){.checkout-grid,.row{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="site-header"><div class="container"><a class="brand" href="index.html">Meerab's Collection</a><a href="account.html">My Account</a></div></header>
+  <main class="checkout">
+    <h1>Checkout</h1>
+    <div id="message"></div>
+    <div class="checkout-grid">
+      <section class="card">
+        <h2>Delivery details</h2>
+        <form id="checkoutForm">
+          <div class="row">
+            <label>Full name<input id="name" required autocomplete="name"></label>
+            <label>Phone<input id="phone" required autocomplete="tel"></label>
+          </div>
+          <label>Delivery address<textarea id="address" rows="3" required autocomplete="street-address"></textarea></label>
+          <label>City<input id="city" required autocomplete="address-level2"></label>
+
+          <h2>Payment</h2>
+          <label class="pay-option"><input type="radio" name="payment" value="cod" checked> Cash on Delivery</label>
+          <label class="pay-option"><input type="radio" name="payment" value="bank"> Bank transfer — instructions will be shown after order</label>
+
+          <button id="placeOrder" type="submit">Place Order</button>
+        </form>
+      </section>
+      <aside class="card">
+        <h2>Your order</h2>
+        <div id="cart"></div>
+        <div class="total"><span>Total</span><span id="grandTotal">PKR 0</span></div>
+      </aside>
+    </div>
+  </main>
+  <script src="supabase-config.js"></script>
+  <script src="checkout.js"></script>
+</body>
+</html>

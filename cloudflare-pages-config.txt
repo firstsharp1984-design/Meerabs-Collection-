@@ -1,0 +1,12 @@
+Cloudflare Pages production values for this plain HTML project
+
+Production branch: main
+Build command: exit 0
+Build output directory: /
+
+No build framework is required.
+
+Important:
+- Put Supabase browser-safe URL/key in supabase-config.js.
+- Never put a Supabase service-role/secret key in frontend code.
+- Replace the placeholder domain in robots.txt and sitemap.xml after choosing a domain.

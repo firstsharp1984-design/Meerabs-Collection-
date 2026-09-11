@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Customer Account — Meerab's Collection</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <main class="auth-shell">
+    <section class="auth-card">
+      <h1>Meerab's Collection</h1>
+      <p class="muted">Customer account</p>
+      <div id="message"></div>
+      <form id="authForm">
+        <label>Email<input id="email" type="email" required autocomplete="email"></label>
+        <label>Password<input id="password" type="password" minlength="6" required autocomplete="new-password"></label>
+        <label id="nameWrap">Full name<input id="fullName" type="text" autocomplete="name"></label>
+        <button id="submitBtn" type="submit">Create account</button>
+      </form>
+      <button class="link-button" id="toggleMode">Already have an account? Sign in</button>
+      <a href="index.html">← Continue shopping</a>
+    </section>
+  </main>
+  <script src="supabase-config.js"></script>
+  <script src="customer-auth.js"></script>
+</body>
+</html>

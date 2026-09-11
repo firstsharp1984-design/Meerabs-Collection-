@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Account — Meerab's Collection</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .account-wrap{max-width:1100px;margin:40px auto;padding:20px}
+    .account-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:24px}
+    .card{background:#fff;border:1px solid #eee;border-radius:18px;padding:22px;box-shadow:0 8px 30px rgba(0,0,0,.05)}
+    input,textarea{width:100%;padding:12px;border:1px solid #ddd;border-radius:10px;margin:6px 0 14px;box-sizing:border-box}
+    .order{border-top:1px solid #eee;padding:15px 0}.muted{color:#777}.danger{background:#222;color:#fff;border:0;padding:10px 16px;border-radius:10px}
+    @media(max-width:800px){.account-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="site-header"><div class="container"><a class="brand" href="index.html">Meerab's Collection</a><a href="index.html">Shop</a></div></header>
+  <main class="account-wrap">
+    <h1>My Account</h1>
+    <p id="welcome" class="muted"></p>
+    <div id="message"></div>
+    <div class="account-grid">
+      <section class="card">
+        <h2>Profile</h2>
+        <form id="profileForm">
+          <label>Name<input id="name" required></label>
+          <label>Phone<input id="phone"></label>
+          <label>Address<textarea id="address"></textarea></label>
+          <label>City<input id="city"></label>
+          <button type="submit">Save profile</button>
+        </form>
+        <br><button id="logout" class="danger">Sign out</button>
+      </section>
+      <section class="card">
+        <h2>My Orders</h2>
+        <div id="orders"><p class="muted">Loading orders…</p></div>
+      </section>
+    </div>
+  </main>
+  <script src="supabase-config.js"></script>
+  <script src="account.js"></script>
+</body>
+</html>
