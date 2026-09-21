@@ -1,4 +1,4 @@
 // PUBLIC browser configuration only.
 // Never paste a service_role/secret key here.
-window.SUPABASE_URL = "YOUR_SUPABASE_PROJECT_URL";
-window.SUPABASE_ANON_KEY = "YOUR_SUPABASE_ANON_OR_PUBLISHABLE_KEY";
+window.SUPABASE_URL = "https://fbbvjvahezmlcxkejjkf.supabase.co/rest/v1/";
+window.SUPABASE_ANON_KEY = "sb_publishable_d399DoaJOimM8SRKR5-Nfw_xEaidz1T";
